@@ -11,7 +11,7 @@ def solveProblem1(instructions):
         elif (action == "forward"):
             horizontal += value
 
-    print(f"problem 2 is {depth * horizontal}")
+    print(f"problem 1 is {depth * horizontal}")
 
 def solveProblem2(instructions):
     horizontal = 0
