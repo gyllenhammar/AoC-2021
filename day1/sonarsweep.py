@@ -1,23 +1,23 @@
 
 def solveProblem1(numbers):
-  num_increase = 0
-  prev_number = 0
+    num_increase = 0
+    prev_number = 0
 
-  for number in numbers:
-      if int(number) > prev_number:
-          num_increase = num_increase + 1
-      prev_number = int(number)
+    for number in numbers:
+        if int(number) > prev_number:
+            num_increase = num_increase + 1
+        prev_number = int(number)
 
-  print(f"problem 1 is {num_increase - 1}")
+    print(f"problem 1 is {num_increase - 1}")
 
 def solveProblem2(numbers):
-  num_increase = 0
-  
-  for i in range(2, len(numbers) -1):
-      if (numbers[i - 2] + numbers[i - 1] + numbers[i]) < (numbers[i-1] + numbers[i] + numbers[i + 1]):
-          num_increase += 1
-  
-  print(f"problem 2 is {num_increase}")
+    num_increase = 0
+    
+    for i in range(2, len(numbers) -1):
+        if (numbers[i - 2] + numbers[i - 1] + numbers[i]) < (numbers[i-1] + numbers[i] + numbers[i + 1]):
+            num_increase += 1
+    
+    print(f"problem 2 is {num_increase}")
 
 
 if __name__ == '__main__':
